@@ -1,0 +1,64 @@
+.Header{
+    width: 100%;
+    background-color: rgba(0,0,0,0.1);
+    padding: 0.5em 0;
+    
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(90deg, rgba(132,1,107,1) 50%, rgba(0,0,0,1) 100%);
+    border-image-slice: 1;
+    width:100%;
+
+    position: fixed;
+    max-width: 1400px;
+}
+
+.Header > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 10em;
+    height: 5em;
+    background-image: url(../imagens/Animes.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.pesquisar{
+    display: flex;
+    align-items: center;
+}
+
+.pesquisar input{
+    font-size: 1em;
+    margin-right: 0.3em;
+    padding: 0.4em 0em;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #84016B;
+}
+
+.pesquisar input::placeholder{
+    color: black;
+}
+
+.pesquisar button{
+    color: #84016B;
+    font-size: 1em;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 320px){
+    .Header > .container{
+        flex-direction: column;
+        padding-bottom: 1em;
+        align-items: center;
+    }
+}

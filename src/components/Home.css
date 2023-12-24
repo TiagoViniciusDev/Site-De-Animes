@@ -1,0 +1,9 @@
+.Home{
+    padding-top: 5.5em;
+}
+
+@media screen and (max-width: 320px){
+    .Home{
+        padding-top: 10em;
+    }
+}

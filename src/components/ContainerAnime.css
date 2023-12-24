@@ -1,0 +1,55 @@
+.ContainerAnime{
+    display: flex;
+    padding: 1.5em 0;
+    border-bottom: 1px solid black;
+}
+
+.ContainerAnime:last-of-type{
+    border: none;
+}
+
+.ContainerAnime > img{
+    width: 13.75em;
+    height: 19.5em;
+}
+
+.ContainerAnime .sobre{
+    margin-left: 1em;
+    max-height: 19.5em;
+    overflow-y: hidden;
+}
+
+
+.ContainerAnime .sobre > .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.625em;
+}
+
+.nota{
+    display: flex;
+    align-items: center;
+    padding: 5px 8px;
+    background-color: rgb(210,210,210);
+}
+
+.nota svg{
+    color: yellow;
+}
+
+.nota h3{
+    margin-left: 0.3em;
+}
+
+@media screen and (max-width: 760px){
+    .ContainerAnime{
+        position: relative;
+    }
+
+    .ContainerAnime .nota{
+        position: absolute;
+        top: 1.5em;
+        left: 0;
+    }
+}
