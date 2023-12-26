@@ -8,11 +8,12 @@ import { useNavigate } from 'react-router-dom';
 
 function Header(){
 
-    const {searchAnime, setSearchAnime, LoadSeachData} = useContext(AnimeDataContext);
+    const {searchAnime, setSearchAnime, LoadSeachData, animePageData, setAnimePageData} = useContext(AnimeDataContext);
 
     const navigate = useNavigate()
 
     function goToHome(){
+        setAnimePageData(undefined)
         navigate("/Site-De-Animes")
     }
 
