@@ -1,3 +1,5 @@
+import './Search.css'
+
 import { useContext, useState } from 'react';
 import { AnimeDataContext } from '../context/context';
 

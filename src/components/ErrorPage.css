@@ -1,3 +1,7 @@
+.ErrorPage{
+    height: 100vh;
+}
+
 .ErrorPage .aviso{
     position: absolute;
     top: 50%;

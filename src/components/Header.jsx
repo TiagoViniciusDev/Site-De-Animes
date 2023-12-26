@@ -13,13 +13,13 @@ function Header(){
     const navigate = useNavigate()
 
     function goToHome(){
-        navigate("/")
+        navigate("/Site-De-Animes")
     }
 
     function goToSearch(e){
         e.preventDefault()
         LoadSeachData(searchAnime)
-        navigate("/pesquisa") //Indo para pagina de pesquisa
+        navigate("/Site-De-Animes/pesquisa") //Indo para pagina de pesquisa
     }
     
     return(

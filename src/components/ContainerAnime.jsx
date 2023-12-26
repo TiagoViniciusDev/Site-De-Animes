@@ -14,7 +14,7 @@ function ContainerAnime({nome, img, desc, nota, id}){
     function AnimeClick(){
         scroll(0,0)
         LoadAnimePageData(id)
-        navigate("/animePage")
+        navigate("/Site-De-Animes/animePage")
     }
 
     return(
