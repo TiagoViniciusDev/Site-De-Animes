@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 
 function Header(){
 
-    const {searchAnime, setSearchAnime, LoadSeachData, animePageData, setAnimePageData} = useContext(AnimeDataContext);
+    const {searchAnime, setSearchAnime, LoadSeachData, setAnimePageData} = useContext(AnimeDataContext);
 
     const navigate = useNavigate()
 
